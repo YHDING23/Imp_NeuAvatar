@@ -11,11 +11,11 @@ We provide a Dockerfile to build an image. Ensure that your docker version >= 19
 ```angular2html
 # build an image with PyTorch 1.10.0, CUDA 11.3
 # if you prefer other versions, just modified the Dockerfile
-sudo docker build -t avatar docker/
+sudo docker build -t centaurusinfra/dlt-avatar docker/
 ```
 Run it with
 ```angular2html
-sudo docker run --gpus all --shm-size=8g -it -v {DATA_DIR}:/avatar/assets avatar
+sudo docker run --gpus all --shm-size=8g -it -v {DATA_DIR}:/avatar/assets centaurusinfra/dlt-avatar
 ```
 
 The `DATA_DIR` in our case is `/nfs_2/Avatar/` which includes 1) pretrained model and data, 2) flame model setup and 3) head tracker setup. 
