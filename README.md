@@ -60,8 +60,6 @@ After the optimization is finished, the trained model is stored in the directory
 
 ### Demos
 
-
-```
 - Download related `flame` setup from [our NFS]() ```/nfs_2/Avatar/assets```, and put the folder under your `NeuAvatar\`. Then run 
 
 - run ```jupyter notebook jupyter_notebooks```, and find notebooks to run
